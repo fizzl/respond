@@ -542,7 +542,9 @@ class Utilities
     public static function ValidateJWTToken(){
     
     	$auth = $_SERVER['HTTP_X_AUTH'];
-
+        if(!$auth) {
+		 $auth = $_SERVER['HTTP_AUTHORIZATION'];
+        } 
 		// locate token
 		if(strpos($auth, 'Bearer') !== false){
 		
