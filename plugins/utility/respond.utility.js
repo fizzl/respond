@@ -50,7 +50,7 @@ respond.utility.load = {
 				url: respond.editor.api +  '/page/content/retrieve',
 				type: 'POST',
 				beforeSend : function(xhr) {
-				 	xhr.setRequestHeader('X-Auth', 'Bearer ' + window.sessionStorage.token);
+				 	xhr.setRequestHeader('HTTP_X_AUTH', 'Bearer ' + window.sessionStorage.token);
 			    },
 				data: {pageId: respond.utility.load.pageId},
 				success: function(data){
@@ -79,7 +79,7 @@ respond.utility.load = {
 				url: respond.editor.api + '/theme/page/content',
 				type: 'post',
 				beforeSend : function(xhr) {
-				 	xhr.setRequestHeader('X-Auth', 'Bearer ' + window.sessionStorage.token);
+				 	xhr.setRequestHeader('HTTP_X_AUTH', 'Bearer ' + window.sessionStorage.token);
 			    },
 				data: {location: respond.utility.load.location},
 				success: function(data){
@@ -107,7 +107,7 @@ respond.utility.load = {
 				url: respond.editor.api + '/version/retrieve',
 				type: 'post',
 				beforeSend : function(xhr) {
-				 	xhr.setRequestHeader('X-Auth', 'Bearer ' + window.sessionStorage.token);
+				 	xhr.setRequestHeader('HTTP_X_AUTH', 'Bearer ' + window.sessionStorage.token);
 			    },
 				data: {versionId: respond.utility.load.versionId},
 				success: function(data){
