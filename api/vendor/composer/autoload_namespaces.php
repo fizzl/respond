@@ -7,7 +7,10 @@ $baseDir = dirname(dirname($vendorDir));
 
 return array(
     'Tonic' => array($vendorDir . '/peej/tonic/src'),
+<<<<<<< HEAD
     'Guzzle\\Tests' => array($vendorDir . '/guzzle/guzzle/tests'),
     'Guzzle' => array($vendorDir . '/guzzle/guzzle/src'),
     'Aws' => array($vendorDir . '/aws/aws-sdk-php/src'),
+=======
+>>>>>>> 4f5d1b2a6a2e228df4182ba88629c8945bb4ea04
 );
